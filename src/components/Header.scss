@@ -1,0 +1,25 @@
+.header {
+  width: 1200px;
+  margin: 0 auto;
+
+  background-color: salmon;
+
+  padding-top: 39px;
+  padding-bottom: 39px;
+  .header_row {
+    display: flex;
+    justify-content: space-around;
+
+    .header_item {
+      color: white;
+      font-size: 18px;
+      transition: 0.8s;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      &:hover {
+        color: green;
+      }
+    }
+  }
+}
