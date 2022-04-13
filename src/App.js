@@ -6,10 +6,8 @@ import Calc from "./components/Calc/Calc";
 import Header from "./components/Header";
 import PostForm from "./components/PostForm/PostForm";
 import PostList from "./components/PostList/PostList";
-import MyButton from "./components/UI/button/MyButton";
-import Input from "./components/UI/input/Input";
 
-function App({}) {
+function App() {
   const [posts, setPosts] = useState([
     { id: 1, title: "JavaScript", body: "Description" },
     { id: 2, title: "JavaScript 2", body: "Description" },
