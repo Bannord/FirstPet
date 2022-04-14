@@ -14,7 +14,10 @@ export default function Calc() {
   };
 
   const handelClick = (e) => {
-    setResult(result.concat(e.target?.name));
+    console.log(result);
+    let res = result + "";
+    console.log(res);
+    setResult(res.concat(e.target.name));
   };
 
   const transaction = () => {
@@ -50,7 +53,6 @@ export default function Calc() {
         >
           /
         </button>
-
         <button onClick={handelClick} name="7" className="btn seven">
           7
         </button>
@@ -74,7 +76,7 @@ export default function Calc() {
         <button onClick={handelClick} name="5" className="btn five">
           5
         </button>
-        <button onClick={handelClick} name="6" className="btn six">
+        <button onClick={handelClick} name="6" className="btn sixty">
           6
         </button>
         <button onClick={handelClick} name="-" className="btn minus bg-orange">

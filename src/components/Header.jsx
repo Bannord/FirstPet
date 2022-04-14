@@ -1,5 +1,7 @@
 import "./Header.scss";
 
+import { Link } from "react-router-dom";
+
 import React from "react";
 
 export default function Header() {
@@ -7,8 +9,12 @@ export default function Header() {
     <div>
       <header className="header">
         <ul className="header_row">
-          <li className="header_item">Calc</li>
-          <li className="header_item">ToDoApp</li>
+          <li className="header_item">
+            <Link to="/calc">Calc</Link>
+          </li>
+          <li className="header_item">
+            <Link to="post">ToDoApp</Link>
+          </li>
           <li className="header_item">SPA</li>
           <li className="header_item">COUNTER</li>
         </ul>

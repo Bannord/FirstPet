@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+a {
+  color: white;
+}
+
 h1 {
   margin: 20px auto;
   text-align: center;
@@ -18,4 +22,6 @@ h1 {
 .App {
   max-width: 1200px;
   margin: 0 auto;
+  height: 100vh;
+  background-color: aquamarine;
 }

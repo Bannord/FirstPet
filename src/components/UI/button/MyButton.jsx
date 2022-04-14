@@ -4,7 +4,7 @@ import "./MyBtn.scss";
 
 export default function MyButton({ children, ...props }) {
   return (
-    <button {...props} className="MyBtn">
+    <button {...props} className="my_btn">
       {children}
     </button>
   );
