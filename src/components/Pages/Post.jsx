@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-import Header from "../Header";
 import PostForm from "../PostForm/PostForm";
 
 import PostList from "../PostList/PostList";
