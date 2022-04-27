@@ -9,11 +9,14 @@ export default function Header() {
     <div>
       <header className="header">
         <ul className="header_row">
+        <li className="header_item">
+            <Link to="/">Main</Link>
+          </li>
           <li className="header_item">
             <Link to="/calc">Calc</Link>
           </li>
           <li className="header_item">
-            <Link to="post">ToDoApp</Link>
+            <Link to="/post">ToDoApp</Link>
           </li>
           <li className="header_item">SPA</li>
           <li className="header_item">COUNTER</li>
