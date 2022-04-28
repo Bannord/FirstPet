@@ -3,8 +3,8 @@ import { useMemo, useState } from "react";
 import PostForm from "../PostForm/PostForm";
 
 import PostList from "../PostList/PostList";
-import Input from "../UI/input/Input";
-import Select from "../UI/select/Select";
+
+import PostFilter from "../PostFilter/PostFilter";
 
 function Post() {
   const [posts, setPosts] = useState([
@@ -13,29 +13,23 @@ function Post() {
     { id: 3, title: "bbb 3", body: "ccc" },
   ]);
 
-  const [selectedSort, setSelectedSort] = useState("");
-
-  const [searchQuery, setSearchQuery] = useState("");
+  const [filter, setFilter] = useState({ sort: "", query: "" });
 
   const sortedPosts = useMemo(() => {
-    if (selectedSort) {
+    if (filter.sort) {
       return [...posts].sort((a, b) =>
-        a[selectedSort].localeCompare(b[selectedSort])
+        a[filter.sort].localeCompare(b[filter.sort])
       );
     }
 
     return posts;
-  }, [selectedSort, posts]);
+  }, [filter.sort, posts]);
 
   const sortedAndSearchPosts = useMemo(() => {
     return sortedPosts.filter((post) =>
-      post.title.toLowerCase().includes(searchQuery)
+      post.title.toLowerCase().includes(filter.query)
     );
-  }, [searchQuery, sortedPosts]);
-
-  const sortPost = (sort) => {
-    setSelectedSort(sort);
-  };
+  }, [filter.query, sortedPosts]);
 
   const createPost = (newPost) => {
     setPosts([...posts, newPost]);
@@ -49,22 +43,7 @@ function Post() {
     <div className="App">
       <PostForm create={createPost} />
 
-      <div>
-        <Input
-          placeholder="Поиск..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-        />
-        <Select
-          value={selectedSort}
-          onChange={sortPost}
-          defaultValue="Сортировка"
-          options={[
-            { value: "title", name: "По названию" },
-            { value: "body", name: "По описанию" },
-          ]}
-        />
-      </div>
+      <PostFilter filter={filter} setFilter={setFilter} />
 
       {sortedAndSearchPosts.length !== 0 ? (
         <PostList
