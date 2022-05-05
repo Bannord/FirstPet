@@ -18,7 +18,9 @@ export default function Header() {
           <li className="header_item">
             <Link to="/post">ToDoApp</Link>
           </li>
-          <li className="header_item">SPA</li>
+          <li className="header_item">
+          <Link to="/bank">Bank</Link>
+          </li>
           <li className="header_item">COUNTER</li>
         </ul>
       </header>
