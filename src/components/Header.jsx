@@ -9,7 +9,7 @@ export default function Header() {
     <div>
       <header className="header">
         <ul className="header_row">
-        <li className="header_item">
+          <li className="header_item">
             <Link to="/">Main</Link>
           </li>
           <li className="header_item">
@@ -19,7 +19,7 @@ export default function Header() {
             <Link to="/post">ToDoApp</Link>
           </li>
           <li className="header_item">
-          <Link to="/bank">Bank</Link>
+            <Link to="/bank">Bank</Link>
           </li>
           <li className="header_item">COUNTER</li>
         </ul>
