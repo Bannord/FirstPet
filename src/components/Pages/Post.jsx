@@ -44,7 +44,7 @@ function Post() {
   };
 
   return (
-    <div className="App">
+    <>
       <MyButton onClick={() => setModal(true)}> Создать пост </MyButton>
       <Modal visible={modal} setVisible={setModal}>
         <PostForm create={createPost} />
@@ -57,7 +57,7 @@ function Post() {
         remove={removePost}
         title="Посты про Js"
       />
-    </div>
+    </>
   );
 }
 

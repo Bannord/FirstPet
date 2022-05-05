@@ -22,39 +22,39 @@ export default function CalcButtons({
       <button onClick={handelClick} name="/" className="btn division bg-orange">
         /
       </button>
-      <button onClick={handelClick} name="7" className="btn seven">
+      <button onClick={handelClick} name="7" className="btn">
         7
       </button>
-      <button onClick={handelClick} name="8" className="btn eight">
+      <button onClick={handelClick} name="8" className="btn">
         8
       </button>
-      <button onClick={handelClick} name="9" className="btn nine">
+      <button onClick={handelClick} name="9" className="btn">
         9
       </button>
       <button onClick={handelClick} name="*" className="btn myltiply bg-orange">
         X
       </button>
 
-      <button onClick={handelClick} name="4" className="btn four">
+      <button onClick={handelClick} name="4" className="btn">
         4
       </button>
-      <button onClick={handelClick} name="5" className="btn five">
+      <button onClick={handelClick} name="5" className="btn">
         5
       </button>
-      <button onClick={handelClick} name="6" className="btn sixty">
+      <button onClick={handelClick} name="6" className="btn">
         6
       </button>
       <button onClick={handelClick} name="-" className="btn minus bg-orange">
         -
       </button>
 
-      <button onClick={handelClick} name="1" className="btn one">
+      <button onClick={handelClick} name="1" className="btn">
         1
       </button>
-      <button onClick={handelClick} name="2" className="btn two">
+      <button onClick={handelClick} name="2" className="btn ">
         2
       </button>
-      <button onClick={handelClick} name="3" className="btn three">
+      <button onClick={handelClick} name="3" className="btn ">
         3
       </button>
       <button onClick={handelClick} name="+" className="btn plus bg-orange">

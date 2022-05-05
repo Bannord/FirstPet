@@ -5,7 +5,7 @@ import Select from "../UI/select/Select";
 
 export default function PostFilter({ filter, setFilter, ...props }) {
   return (
-    <div>
+    <>
       <Input
         placeholder="Поиск..."
         value={filter.query}
@@ -22,6 +22,6 @@ export default function PostFilter({ filter, setFilter, ...props }) {
           { value: "body", name: "По описанию" },
         ]}
       />
-    </div>
+    </>
   );
 }
