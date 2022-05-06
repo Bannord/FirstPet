@@ -6,13 +6,10 @@ import Post from "./components/Pages/Post";
 import Calc from "./components/Calc/Calc";
 import MainPage from "./components/Pages/MainPage";
 
-
 import Bank from "./components/Pages/ReduxBank/Bank";
-
 
 function App() {
   return (
-    
     <div className="App">
       <Header />
 
@@ -24,7 +21,6 @@ function App() {
         <Route path="/calc" element={<Calc />}></Route>
       </Routes>
     </div>
-    
   );
 }
 

@@ -1,3 +1,17 @@
 .bank_btn {
     text-align: center;
+
+    .cash {
+        margin: 20px 0;
+        font-size: 50px;
+    }
+
+    .customer_title {
+        border: 1px solid gray;
+        width: max-content;
+        margin: 10px auto;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 40px;
+    }
 }
