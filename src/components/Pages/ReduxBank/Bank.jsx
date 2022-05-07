@@ -12,6 +12,7 @@ import {
 } from "./Reducers/customersReducer";
 
 import "./Bank.scss";
+import { fetchCustomers } from "./asyncAction/customers";
 
 export default function Bank() {
   const dispatch = useDispatch();
@@ -51,6 +52,9 @@ export default function Bank() {
       </MyButton>
       <MyButton onClick={() => addCustomer(prompt())}>
         Добавить пользователя
+      </MyButton>
+      <MyButton onClick={() => dispatch(fetchCustomers())}>
+        Получить клиентов из базы
       </MyButton>
 
       {customers.length > 0 ? (
